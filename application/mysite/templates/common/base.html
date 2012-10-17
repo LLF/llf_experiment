@@ -1,0 +1,16 @@
+{% load mysite_extra %}
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+    <head>
+    </head>
+    <body>
+    <p>LLF'site</p>
+    <p>{% mysite 'a' %}</p>
+    {% up 'b' %}
+    {% comment %}
+    <p>www</p>
+    {% endcomment %}
+    <p>eee</p>
+    {% down %}
+    </body>
+</html>
