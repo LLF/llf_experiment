@@ -24,6 +24,13 @@ def comment_test(parser, token):
     parser.delete_first_token()
     return CommentNode()
 
+
+@register.inclusion_tag('common/xtitle.html')
+def title():
+    return {
+            'tag_title': 'aaa',
+    }
+
 class TestNode(template.Node):
     
     def __init__(self, argument):
