@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta name="viewport" content="width=device-width,initial-scale=1.0,maximum-scale=1.0,user-scalable=no" />
+    <meta content="text/html; charset=utf-8" http-equiv="Content-Type" />
+    <link rel="stylesheet" href="../../sp/css/common.css"/>
+    <link rel="stylesheet" href="../../sp/css/index.css"/>
+    <script type="text/javascript" src="../../sp/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../../sp/js/common.js"></script>
+    <title>GREE</title>
+  </head>
+<body>
+
+<div class="wrapper">
+<!--header START-->
+    <header id="slide_box_outside">
+        <ul class="t_list">
+            <li style="top:0px;left:0px;"><a class="menu_1" href="{% opensocial_url mobile_root_index %}">マイキャッスル</a></li>
+            <li style="top:0px;left:64px;"><a class="menu_2" href="{% opensocial_url mobile_quest_index %}">侵略</a></li>
+            <li style="top:0px;left:128px;"><a class="menu_3" href="{% opensocial_url guild_battle_top %}">大戦</a></li>
+            <li style="top:0px;left:192px;"><a class="menu_4" href="{% opensocial_url mobile_gashapon_index %}">ガチャ</a></li>
+            <li style="top:0px;left:256px;"><a class="menu_5" href="javascript:void(0);" id="menu5_top" onclick="so.openNotification();">メニュー</a></li>
+        </ul>
+
+        <div id="slide_box" class="bg_grey">
+            <ul class="slide_navi_1">
+                <li class="navi_1_1"><a href="{% opensocial_url mobile_quest_index %}">侵略</a></li>
+                <li class="navi_1_2"><a href="{% opensocial_url guild_battle_top %}">大戦</a></li>
+                <li class="navi_1_3"><a href="{% opensocial_url fusion_index %}">武具合成</a></li>
+                <li class="navi_1_4"><a href="{% opensocial_url hunt_top_page %}">潜入</a></li>
+                <li class="navi_1_5"><a href="{% opensocial_url mobile_gashapon_index %}">ガチャ</a></li>
+                <li class="navi_1_6"><a href="{% opensocial_url guild_index %}">帝国</a></li>
+            </ul>
+            <ul class="slide_navi_2">
+                <li class="navi_2_1"><a href="{% opensocial_url equipment_index %}">装備</a></li>
+                <li class="navi_2_2"><a href="{% opensocial_url gift_index %}">貢物</a></li>
+                <li class="navi_2_3"><a href="{% opensocial_url card_index %}">武具一覧</a></li>
+                <li class="navi_2_4"><a href="{% opensocial_url playerjob_series %}">図鑑</a></li>
+                <li class="navi_2_5"><a href="{% opensocial_url playerjob_top %}">ジョブ</a></li>
+                <li class="navi_2_6"><a href="{% opensocial_url battle_ability_index %}">アビリティ</a></li>
+                <li class="navi_2_7"><a href="{% opensocial_url raremedal_top 'items' %}">レアメダル</a></li>
+                <li class="navi_2_8"><a href="{% opensocial_url item_index %}">所持品</a></li>
+                <li class="navi_2_9"><a href="{% opensocial_url shop_index %}">ショップ</a></li>
+                <li class="navi_2_10"><a href="{% opensocial_url wish_index %}">欲しい秘宝</a></li>
+                <li class="navi_2_11"><a href="{% opensocial_url guildnavi_mix_top %}">帝国NAVI</a></li>
+                <li class="navi_2_12"><a href="{% opensocial_url guildnavi_top %}">帝国職安</a></li>
+                <li class="navi_2_13"><a href="{% opensocial_url friend_search_companion %}">友たちリスト</a></li>
+                <li class="navi_2_14"><a href="{% opensocial_url friend_index %}">フレンドリスト</a></li>
+                <li class="navi_2_15"><a href="{% opensocial_url help_index %}">ヘルプ</a></li>
+            </ul>
+        </div>
+    </header>
+<!--header END-->
+    <section id="sec_mptop" class="bg_grey">
+        <div class="center page_title red_title mypage_title">
+            <img src="../../sp/imgs/common/mypage/line_mypage.png" width="100%" class="block" />
+            <p class="underline">ギルド名</p>
+            <img src="../../sp/imgs/common/lineA_bottom.png" width="100%" class="block" />
+        </div>
+        <a id="info_link" href="javascript:void(0);" class="news_pic_link" onclick="mo.openNotification();"><span>2</span><img src="../../sp/imgs/common/new_txt.png" width="80%" class="block"></a>
+        <div data-role="notification">
+            <div class="pt5">
+                <a href="{{ info.url }}" class="color_high_yellow border_grey arrow_info">新着情報テスト1</a>
+                <a href="{{ info.url }}" class="color_high_yellow border_grey arrow_info">新着情報テスト2</a>
+                <a href="{{ info.url }}" class="color_high_yellow border_grey arrow_info">新着情報テスト3</a>
+                <a href="javascript:void(0);" class="color_white right" style="margin-right:20px;" onclick="mo.closeNotification();">×閉じる</a>
+            </div>
+        </div>
+    </section>
+
+    <section id="sec_avatar_ui">
+        <div class="level_box color_yellow">100</div>
+        <div class="position_box color_yellow">皇帝</div>
+        <a href="#" class="avater"><img src="../../sp/imgs/common/mypage/avatar.png" width="230" height="140"></a>
+    </section>
+
+    <section id="sec_status_ui">
+        <!--武器クリックエリア-->
+        <a href="#" class="left_link"></a>
+        <!--武器クリスタル-->
+        <div class="left_icon_box">
+            <span class="ico_job_status ico_job_1_30p"></span>
+            <span class="ico_level level_3"></span>
+            <span class="ico_type type_1"></span>
+        </div>
+        <!--武器枠-->
+        <div class="left_box type_1">
+            <!--精霊-->
+            <img src="../../sp/imgs/common/mypage/box_item/spirit_1_2.png" width="90" height="120" class="spirit">
+            <!--武具-->
+            <img src="../../sp/imgs/card/mypage_new/114026.png" width="90" height="120" class="card">
+        </div>
+        <!--武器クリックエリア-->
+        <a href="#" class="right_link"></a>
+        <!--防具クリスタル-->
+        <div class="right_icon_box">
+            <span class="ico_job_status ico_job_3_30p"></span>
+            <span class="ico_level level_3"></span>
+            <span class="ico_type type_6"></span>
+        </div>
+        <!--防具枠-->
+        <div class="right_box type_2">
+            <!--防具-->
+            <img src="../../sp/imgs/card/mypage_new/233000.png" width="90" height="120" class="card">
+            <!--精霊-->
+            <img src="../../sp/imgs/common/mypage/box_item/spirit_2_3.png" width="90" height="120" class="spirit">
+        </div>
+        <!--ステータス-->
+        <div class="center_box">
+            <div class="lv_tar"><span style="width:80%;"></span></div>
+            <div class="status_value">75 / 75<br/>100 / 100<br/>123456</div>
+        </div>
+    </section>
+
+    <section id="marquee_msg">
+        <marquee class="color_yellow" onmouseover="this.stop()" onmouseout="this.start();">テストメッセージ1&nbsp;&nbsp;&nbsp;&nbsp;テストメッセージ2&nbsp;&nbsp;&nbsp;&nbsp;テストメッセージ3&nbsp;&nbsp;&nbsp;&nbsp;</marquee>
+    </section>
+
+    <section id="btn_ui_box">
+        <a href="#" class="btn_1">侵略</a>
+        <a href="#" class="btn_2">武具合成</a>
+        <a href="#" class="btn_3">ガチャ</a>
+        <a href="#" class="btn_4">略奪</a>
+        <a href="#" class="btn_5 center color_high_yellow underline"><span>次のﾊﾞﾄﾙ開始</span><br/>04時間00分</a>
+    </section>
+
+</div>
+</body>
+</html>
